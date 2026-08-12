@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaHeart } from "react-icons/fa";
-import Sparkles from "./Sparkles";
 
 export default function Footer() {
   return (

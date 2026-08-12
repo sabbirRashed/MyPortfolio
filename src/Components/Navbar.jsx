@@ -7,10 +7,10 @@ import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 
 const navItems = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Skills", path: "/skills" },
-    { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" },
+    { name: "About", path: "#aboutMe" },
+    { name: "Skills", path: "#skills" },
+    { name: "Projects", path: "#projects" },
+    { name: "Contact", path: "#contact" },
 ];
 
 export default function Navbar() {
