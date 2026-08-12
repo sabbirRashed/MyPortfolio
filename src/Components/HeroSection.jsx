@@ -34,11 +34,11 @@ export default function Hero() {
                         </span>
                     </div>
 
-                    <p className="mb-2 font-mono text-sm text-cyan-400/80">
-                        Hi, my name is
+                    <p className="mb-2 text-lg text-cyan-400/80">
+                        Hi, I am
                     </p>
 
-                    <h1 className="text-5xl font-bold tracking-tight text-white md:text-7xl">
+                    <h1 className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-5xl font-bold text-transparent md:text-7xl">
                         Sabbir Rahman
                     </h1>
 
@@ -66,17 +66,28 @@ export default function Hero() {
                         </span>
                     </h2>
 
-                    <p className="mt-8 max-w-xl leading-8 text-white/60">
-                        I build fast, responsive and modern web applications using React,
-                        Next.js, Tailwind CSS and Node.js with a strong focus on performance,
-                        accessibility and delightful user experiences.
+                    <p className="mt-8 max-w-2xl leading-8 text-white/60">
+                        I'm a <span className="font-semibold text-cyan-400">Frontend-focused MERN Stack Developer</span> who enjoys building{" "}
+                        <span className="font-semibold text-white">fast</span>,{" "}
+                        <span className="font-semibold text-white">scalable</span>, and{" "}
+                        <span className="font-semibold text-white">user-centric</span> web applications.
+                        With expertise in{" "}
+                        <span className="font-semibold text-cyan-400">
+                            React, Next.js, Tailwind CSS, Node.js, Express.js, and MongoDB
+                        </span>
+                        , I create modern digital experiences that combine{" "}
+                        <span className="font-semibold text-white">clean code</span>,{" "}
+                        <span className="font-semibold text-white">responsive design</span>,{" "}
+                        <span className="font-semibold text-white">accessibility</span>, and{" "}
+                        <span className="font-semibold text-white">performance</span> to deliver
+                        real value.
                     </p>
 
                     <div className="mt-10 flex flex-wrap justify-center gap-4 lg:justify-start">
 
                         <Link
                             href="#contact"
-                            className="group flex items-center gap-2 rounded-full bg-cyan-400 px-7 py-3.5 font-semibold text-slate-950 transition-colors duration-300 hover:bg-cyan-300"
+                            className="group flex items-center gap-2 rounded-lg bg-cyan-400 px-7 py-3.5 font-semibold text-slate-950 transition-colors duration-300 hover:bg-cyan-300"
                         >
                             Get In Touch
                             <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-0.5" />
@@ -85,7 +96,7 @@ export default function Hero() {
                         <Link
                             href="/resume.pdf"
                             target="_blank"
-                            className="flex items-center gap-2 rounded-full border border-white/15 px-7 py-3.5 font-semibold text-white/90 backdrop-blur-xl transition-colors duration-300 hover:border-cyan-400/50 hover:bg-white/5"
+                            className="flex items-center gap-2 rounded-lg border border-white/15 px-7 py-3.5 font-semibold text-white/90 backdrop-blur-xl transition-colors duration-300 hover:border-cyan-400/50 hover:bg-white/5"
                         >
                             Download Resume
                             <FiDownload />
