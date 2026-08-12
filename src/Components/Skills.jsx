@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import {
@@ -113,6 +113,13 @@ export default function Skills() {
     const [activeSkill, setActiveSkill] = useState(null);
     const barRefs = useRef({});
 
+    // Stable ref setter — an inline arrow function here would be re-created on
+    // every render (e.g. every time activeSkill changes), which can reset
+    // Framer Motion's viewport observer, especially on mobile.
+    const setBarRef = useCallback((name) => (node) => {
+        barRefs.current[name] = node;
+    }, []);
+
     const handlePillClick = (name) => {
         setActiveSkill(name);
         const node = barRefs.current[name];
@@ -181,12 +188,10 @@ export default function Skills() {
                         return (
                             <motion.div
                                 key={skill.name}
-                                ref={(node) => {
-                                    barRefs.current[skill.name] = node;
-                                }}
+                                ref={setBarRef(skill.name)}
                                 initial={{ opacity: 0, y: 16 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-60px" }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.5, delay: i * 0.05 }}
                                 className={`rounded-2xl border bg-white/5 p-6 backdrop-blur-xl transition-shadow duration-300 ${isActive
                                         ? "border-cyan-400/50 shadow-lg shadow-cyan-500/10"
@@ -206,7 +211,7 @@ export default function Skills() {
                                     <motion.div
                                         initial={{ width: 0 }}
                                         whileInView={{ width: `${skill.percent}%` }}
-                                        viewport={{ once: true, margin: "-60px" }}
+                                        viewport={{ once: true, amount: 0.3 }}
                                         transition={{ duration: 1, ease: "easeOut", delay: i * 0.05 }}
                                         className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400"
                                     />
@@ -223,7 +228,7 @@ export default function Skills() {
                             key={category.label}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-60px" }}
+                            viewport={{ once: true, amount: 0.3 }}
                             transition={{ duration: 0.5, delay: i * 0.08 }}
                             className="rounded-2xl border border-white/10 bg-white/5 p-6 text-left backdrop-blur-xl transition-colors duration-300 hover:border-white/20"
                         >
