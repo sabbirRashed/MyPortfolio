@@ -69,7 +69,7 @@ export default function About() {
                     >
                         <div className="relative h-[480px] w-full">
                             <Image
-                                src="/profile.png"
+                                src="/assets/profile_pic.png"
                                 alt="Sabbir Rahman"
                                 fill
                                 className="object-cover"

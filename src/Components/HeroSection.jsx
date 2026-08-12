@@ -117,7 +117,7 @@ export default function Hero() {
                         <div className="absolute inset-3 overflow-hidden rounded-full border border-white/10 bg-white/5 p-2 backdrop-blur-xl">
                             <div className="relative h-full w-full overflow-hidden rounded-full">
                                 <Image
-                                    src="/profile.png"
+                                    src="/assets/profile_pic.png"
                                     alt="Sabbir Rahman"
                                     fill
                                     className="object-cover"

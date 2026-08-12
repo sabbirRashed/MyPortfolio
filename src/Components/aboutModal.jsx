@@ -40,7 +40,7 @@ export function AboutModal() {
                 LOAD FULL PROFILE
                 <ChevronRight size={14} />
             </Button>
-            <Modal.Backdrop>
+            <Modal.Backdrop className={"bg-slate-950/60 backdrop-blur-md"}>
                 <Modal.Container>
                     <Modal.Dialog className="sm:max-w-3xl bg-white/10 backdrop-blur-2xl border border-slate-700 ">
                         <Modal.CloseTrigger />
