@@ -21,7 +21,7 @@ export default function Hero() {
             <div className="relative mx-auto flex min-h-screen w-11/12 max-w-7xl flex-col-reverse items-center gap-20 py-24 lg:flex-row">
 
                 {/* Left */}
-                <div className="flex-1 text-center lg:text-left">
+                <div className="flex-1">
 
                     {/* Status indicator — terminal-style, not an emoji badge */}
                     <div className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 backdrop-blur-xl">

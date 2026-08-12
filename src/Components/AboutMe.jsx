@@ -13,6 +13,7 @@ import {
 } from "@heroui/react";
 import { MapPin, FileText, ChevronRight, Mail, Download } from "lucide-react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
+import { AboutModal } from "./aboutModal";
 
 const STATS = [
     { value: "20+", label: "PROJECTS BUILT" },
@@ -43,13 +44,13 @@ export default function About() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-80px" }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
-                    className="text-center"
+                    className=""
                 >
                     <p className="mb-4 font-mono text-sm text-cyan-400/80">// about</p>
                     <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
                         About Me
                     </h2>
-                    <p className="mx-auto mt-4 max-w-xl text-white/50">
+                    <p className=" mt-4 max-w-xl text-white/50">
                         Currently building SparkNest, Voyentra and QurbaniHat — three
                         full-stack platforms, one growing skill set.
                     </p>
@@ -119,14 +120,8 @@ export default function About() {
                                 <span className="text-cyan-400">Modern Web Stack</span>
                             </h3>
 
-                            <button
-                                // onClick={onOpen}
-                                className="flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 font-mono text-xs tracking-wide text-white/70 transition-colors duration-300 hover:border-cyan-400/50 hover:text-cyan-300"
-                            >
-                                <FileText size={14} />
-                                LOAD FULL PROFILE
-                                <ChevronRight size={14} />
-                            </button>
+                            {/* load full profile */}
+                            <AboutModal/>
                         </div>
 
                         <div className="mt-6 space-y-5 leading-8 text-white/60">
@@ -183,7 +178,6 @@ export default function About() {
             </div>
 
             {/* Full profile modal — glassmorphic */}
-
         </section>
     );
 }
