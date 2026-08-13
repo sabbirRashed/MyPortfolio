@@ -63,7 +63,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative overflow-hidden bg-slate-950 text-white">
+        <section id="home" className="relative overflow-hidden scroll-mt-24 bg-slate-950 text-white">
             {/* Subtle backdrop grid — quiet texture, not decoration */}
             <div
                 className="pointer-events-none absolute inset-0 opacity-[0.04]"

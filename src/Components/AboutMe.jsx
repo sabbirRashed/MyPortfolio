@@ -32,7 +32,7 @@ export default function About() {
     // const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     return (
-        <section id="aboutMe" className="relative overflow-hidden bg-slate-950 text-white">
+        <section id="aboutMe" className="relative overflow-hidden scroll-mt-24 bg-slate-950 text-white">
             {/* Ambient glow, consistent with Hero */}
             <div className="pointer-events-none absolute left-1/2 top-0 h-[420px] w-[600px] -translate-x-1/2 -translate-y-1/3 rounded-full bg-cyan-500/10 blur-[140px]" />
 

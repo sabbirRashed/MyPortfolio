@@ -26,7 +26,7 @@ const cardVariants = {
 
 export default function Projects() {
     return (
-        <section className="relative overflow-hidden bg-slate-950 text-white">
+        <section id="projects" className="relative overflow-hidden scroll-mt-24 bg-slate-950 text-white">
             {/* Ambient glow, consistent with the rest of the page */}
             <div className="pointer-events-none absolute left-1/3 top-0 h-[420px] w-[420px] -translate-y-1/3 rounded-full bg-cyan-500/10 blur-[140px]" />
             <div className="pointer-events-none absolute bottom-0 right-1/3 h-[380px] w-[380px] translate-y-1/3 rounded-full bg-indigo-500/10 blur-[140px]" />
