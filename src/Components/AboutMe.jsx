@@ -47,7 +47,7 @@ export default function About() {
                     className=""
                 >
                     <p className="mb-4 font-mono text-sm text-cyan-400/80">// about</p>
-                    <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
+                    <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl font-sora">
                         About Me
                     </h2>
                     <p className=" mt-4 max-w-xl text-white/50">
@@ -131,7 +131,7 @@ export default function About() {
                         className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl"
                     >
                         <div className="flex flex-wrap items-start justify-between gap-4">
-                            <h3 className="text-3xl font-bold leading-tight md:text-4xl">
+                            <h3 className="text-3xl font-bold font-sora leading-tight md:text-4xl">
                                 Building the <br />
                                 <span className="text-cyan-400">Modern Web Stack</span>
                             </h3>
@@ -149,7 +149,7 @@ export default function About() {
                             </p>
                             <p>
                                 With hands-on experience across{" "}
-                                <span className="text-cyan-400">React</span> and{" "}
+                                <span className="text-cyan-400">Next.js</span> and{" "}
                                 <span className="text-indigo-400">Node.js</span> ecosystems, I
                                 don't just style components — I build complete systems:
                                 authentication, REST APIs, and MongoDB-backed backends that
@@ -162,7 +162,7 @@ export default function About() {
                         <div className="mt-8 grid grid-cols-2 gap-6 border-t border-white/10 pt-8 sm:grid-cols-4">
                             {STATS.map((stat) => (
                                 <div key={stat.label}>
-                                    <p className="text-2xl font-bold text-white">{stat.value}</p>
+                                    <p className="text-2xl font-bold font-sora text-white">{stat.value}</p>
                                     <p className="mt-1 font-mono text-[11px] tracking-wide text-white/40">
                                         {stat.label}
                                     </p>

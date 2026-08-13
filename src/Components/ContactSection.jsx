@@ -83,7 +83,7 @@ export default function Contact() {
                     className="max-w-2xl text-left"
                 >
                     <p className="mb-4 font-mono text-sm text-cyan-400/80">// contact</p>
-                    <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
+                    <h2 className="text-4xl font-bold font-sora tracking-tight text-white md:text-5xl">
                         Get In Touch
                     </h2>
                     <p className="mt-5 text-base leading-8 text-white/60 md:text-lg">

@@ -94,7 +94,7 @@ export default function Hero() {
                         Hi, I am
                     </p>
 
-                    <h1 className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-5xl font-bold text-transparent md:text-7xl">
+                    <h1 className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-5xl font-sora font-bold text-transparent md:text-7xl">
                         Sabbir Rahman
                     </h1>
 
@@ -115,7 +115,7 @@ export default function Hero() {
                         <span className="font-semibold text-white">user-centric</span> web applications.
                         With expertise in{" "}
                         <span className="font-semibold text-cyan-400">
-                            React, Next.js, Tailwind CSS, Node.js, Express.js, and MongoDB
+                            Next.js, React, Tailwind CSS, Node.js, Express.js, and MongoDB
                         </span>
                         , I create modern digital experiences that combine{" "}
                         <span className="font-semibold text-white">clean code</span>,{" "}

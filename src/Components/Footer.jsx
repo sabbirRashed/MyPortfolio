@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/10 blur-[140px]" />
 
       <div className="relative z-10 mx-auto flex w-11/12 max-w-7xl flex-col items-center py-20 text-center">
-        <h2 className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-4xl font-bold text-transparent">
+        <h2 className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-4xl font-bold font-sora text-transparent">
           Let's Build Something Amazing
         </h2>
 
