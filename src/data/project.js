@@ -18,7 +18,7 @@ export const projects = [
             "MongoDB",
             "Better Auth",
             "JWT",
-            "Tailwind CSS v4",
+            "Tailwind CSS",
             "Hero UI",
             "Framer Motion",
         ],
@@ -60,10 +60,9 @@ export const projects = [
             "Express.js",
             "MongoDB",
             "JWT",
-            "Tailwind CSS v4",
-            "HeroUI v3",
+            "Tailwind CSS",
+            "HeroUI",
             "Framer Motion",
-            "React Icons"
         ],
 
         highlights: [
@@ -80,35 +79,41 @@ export const projects = [
 
     {
         id: 3,
-        title: "QurbaniHat",
         slug: "qurbanihat",
-        featured: true,
+        featured: false,
+
+        title: "QurbaniHat",
+
+        tagline: "Modern Online Qurbani Cattle Marketplace",
+
         description:
-            "A modern Qurbani cattle marketplace with a clean UI, responsive layouts, and engaging user experience.",
+            "A modern web platform where users can browse Qurbani cattle, explore detailed listings, and find suitable animals through a clean and responsive interface.",
 
         image: "/images/projects/qurbanihat.webp",
 
-        techStack: [
-            "Next.js",
-            "React",
-            "Tailwind CSS",
-            "HeroUI",
-            "Framer Motion",
-        ],
+        liveUrl: "https://qurbani-hat-phi-rose.vercel.app",
+
+        githubUrl: "https://github.com/sabbirRashed/QurbaniHat",
 
         category: "Frontend",
 
-        github: {
-            client: "https://github.com/sabbirRashed/QurbaniHat",
-        },
-
-        live: "https://qurbani-hat-phi-rose.vercel.app/",
+        techStack: [
+            "Next.js",
+            "HeroUI",
+            "Tailwind CSS",
+            "Better Auth",
+            "MongoDB",
+        ],
 
         highlights: [
-            "Beautiful responsive landing page",
-            "Modern UI design",
-            "Smooth animations",
-            "Optimized performance",
-        ],
-    },
+            "User authentication",
+            "Browse cattle listings",
+            "Responsive design",
+            "Modern UI with HeroUI",
+            "Form validation",
+            "Toast notifications",
+            "Loading states",
+            "Reusable component architecture"
+        ]
+    }
 ];
