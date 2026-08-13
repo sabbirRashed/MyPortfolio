@@ -178,6 +178,7 @@ export default function Contact() {
                                     Thanks for reaching out — I'll reply soon.
                                 </p>
                                 <Button
+                                    variant="light"
                                     onClick={() => setStatus("idle")}
                                     className="mt-6 font-mono text-xs text-cyan-300 underline underline-offset-4 hover:text-cyan-200"
                                 >

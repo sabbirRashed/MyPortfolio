@@ -1,18 +1,18 @@
 "use client";
 
 import { Button, Modal } from "@heroui/react";
-import { ChevronRight, FileText,Terminal, GraduationCap, Award, Users, Mail, Download } from "lucide-react";
+import { ChevronRight, FileText, Terminal, GraduationCap, Award, Users, Mail, Download } from "lucide-react";
 import { motion } from "framer-motion";
 import { SiGithub, } from "react-icons/si";
 import { SlSocialLinkedin } from "react-icons/sl";
 import Link from "next/link";
- 
+
 const EDUCATION = [
     { period: "2021 — Present", title: "BSc in Mathematics", place: "National University, Bangladesh" },
     { period: "2021", title: "Higher Secondary Certificate (HSC)", place: "GPA 4.75" },
     { period: "2019", title: "Secondary School Certificate (SSC)", place: "GPA 4.72" },
 ];
- 
+
 
 const LANGUAGES = [
     { name: "Bangla", level: "Native", percent: 100 },
@@ -146,7 +146,7 @@ export function AboutModal() {
                                     custom={4}
                                     className="flex flex-wrap gap-3 border-t border-white/10 pt-6"
                                 >
-                                    <Link
+                                    <a
                                         href="https://github.com/sabbirRashed"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -154,8 +154,8 @@ export function AboutModal() {
                                     >
                                         <SiGithub size={16} />
                                         GitHub
-                                    </Link>
-                                    <Link
+                                    </a>
+                                    <a
                                         href="https://linkedin.com/in/sabbirrahman"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -163,15 +163,16 @@ export function AboutModal() {
                                     >
                                         <SlSocialLinkedin size={16} />
                                         LinkedIn
-                                    </Link>
-                                    <Link
+                                    </a>
+                                    <a
                                         href="mailto:srsabbirrahman12@gmail.com"
+                                        target="_self"
                                         className="flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition-colors hover:border-cyan-400/50 hover:text-cyan-300"
                                     >
                                         <Mail size={16} />
                                         Email
-                                    </Link>
-                                    <Link
+                                    </a>
+                                    <a
                                         href="/resume.pdf"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -179,7 +180,7 @@ export function AboutModal() {
                                     >
                                         Resume
                                         <Download size={16} />
-                                    </Link>
+                                    </a>
                                 </motion.div>
                             </div>
                         </Modal.Body>
