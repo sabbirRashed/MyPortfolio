@@ -74,6 +74,22 @@ export default function About() {
                                 fill
                                 className="object-cover"
                             />
+                            <motion.div
+                                className="absolute left-0 right-0 h-12 pointer-events-none"
+                                animate={{ y: [-50 , 480] }}
+                                transition={{
+                                    duration: 3,
+                                    repeat: Infinity,
+                                    ease: "linear",
+                                }}
+                            >
+                                {/* Glow */}
+                                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-400/25 to-transparent blur-md" />
+
+                                {/* Bright center line */}
+                                <div className="absolute top-1/2 h-[2px] w-full -translate-y-1/2 bg-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.9)]" />
+                            </motion.div>
+
                             {/* Bottom gradient so overlaid text stays readable */}
                             <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent" />
                         </div>
@@ -121,7 +137,7 @@ export default function About() {
                             </h3>
 
                             {/* load full profile */}
-                            <AboutModal/>
+                            <AboutModal />
                         </div>
 
                         <div className="mt-6 space-y-5 leading-8 text-white/60">
