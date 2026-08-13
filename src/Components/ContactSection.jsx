@@ -67,7 +67,7 @@ export default function Contact() {
     };
 
     return (
-        <section className="relative overflow-hidden bg-slate-800 text-white">
+        <section id="contact" className="relative overflow-hidden bg-slate-800 text-white">
             {/* Ambient glow, consistent with Skills */}
             <div className="pointer-events-none absolute right-1/4 top-0 h-[400px] w-[400px] -translate-y-1/3 rounded-full bg-cyan-500/10 blur-[130px]" />
             <div className="pointer-events-none absolute bottom-0 left-1/4 h-[360px] w-[360px] translate-y-1/3 rounded-full bg-indigo-500/10 blur-[130px]" />
