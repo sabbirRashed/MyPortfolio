@@ -1,41 +1,6 @@
 export const projects = [
-    {
+     {
         id: 1,
-        slug: "voyentra",
-        featured: true,
-        title: "Voyentra",
-        tagline: "Modern Full-Stack Travel Booking Platform",
-        description:
-            "A full-stack tourism platform where users can explore destinations, book trips, and manage their bookings through a modern and responsive interface.",
-        image: "/images/projects/voyentra.webp",
-        liveUrl: "https://voyentra.vercel.app",
-        githubUrl: "https://github.com/sabbirRashed/Voyentra",
-        category: "Full Stack",
-        techStack: [
-            "Next.js 16",
-            "Node.js",
-            "Express.js",
-            "MongoDB",
-            "Better Auth",
-            "JWT",
-            "Tailwind CSS",
-            "Hero UI",
-            "Framer Motion",
-        ],
-        highlights: [
-            "Authentication",
-            "Destination Management",
-            "Booking System",
-            "Protected Routes",
-            "Responsive Design",
-            "REST API",
-            "Server Components",
-            "App Router",
-        ],
-    },
-
-    {
-        id: 2,
         slug: "sparknest",
         featured: true,
 
@@ -75,6 +40,41 @@ export const projects = [
             "Next.js App Router",
             "Reusable component architecture"
         ]
+    },
+
+    {
+        id: 2,
+        slug: "voyentra",
+        featured: true,
+        title: "Voyentra",
+        tagline: "Modern Full-Stack Travel Booking Platform",
+        description:
+            "A full-stack tourism platform where users can explore destinations, book trips, and manage their bookings through a modern and responsive interface.",
+        image: "/images/projects/voyentra.webp",
+        liveUrl: "https://voyentra.vercel.app",
+        githubUrl: "https://github.com/sabbirRashed/Voyentra",
+        category: "Full Stack",
+        techStack: [
+            "Next.js 16",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Better Auth",
+            "JWT",
+            "Tailwind CSS",
+            "Hero UI",
+            "Framer Motion",
+        ],
+        highlights: [
+            "Authentication",
+            "Destination Management",
+            "Booking System",
+            "Protected Routes",
+            "Responsive Design",
+            "REST API",
+            "Server Components",
+            "App Router",
+        ],
     },
 
     {
