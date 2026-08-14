@@ -16,6 +16,7 @@ export default function SmoothScrollProvider({ children }) {
         const lenisInstance = new Lenis({
             duration: 1.2,
             smoothWheel: true,
+            allowNestedScroll: true,
         });
 
         setLenis(lenisInstance);

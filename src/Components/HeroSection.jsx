@@ -79,57 +79,72 @@ export default function Hero() {
                 {/* Left */}
                 <div className="flex-1">
 
-                    {/* Status indicator — terminal-style, not an emoji badge */}
-                    <div className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 backdrop-blur-xl">
-                        <span className="relative flex h-1.5 w-1.5">
-                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-60 [animation-duration:2.5s]" />
-                            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-cyan-400" />
-                        </span>
-                        <span className="font-mono text-xs tracking-wide text-white/60">
-                            OPEN_TO_INTERNSHIP · FREELANCE
+                    {/* Status indicator — terminal-style */}
+                    <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 px-3 py-1">
+                        <span className="h-2 w-2 rounded-full bg-emerald-400" />
+                        <span className="text-xs font-medium tracking-wide text-white/65">
+                            AVAILABLE FOR INTERNSHIP
                         </span>
                     </div>
 
-                    <p className="mb-2 text-lg text-cyan-400/80">
-                        Hi, I am
-                    </p>
-
-                    <h1 className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-5xl font-sora font-bold text-transparent md:text-7xl">
-                        Sabbir Rahman
+                    <h1 className="mt-6 font-sora text-5xl font-bold leading-none md:text-7xl">
+                        <span className="text-white">Sabbir </span>
+                        
+                        <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">
+                            Rahman
+                        </span>
                     </h1>
 
-                    <h2 className="mt-5 font-mono text-lg text-white/60 md:text-xl">
-                        <span className="text-white/30">const</span>{" "}
-                        <span className="text-cyan-300">role</span>{" "}
-                        <span className="text-white/30">=</span>{" "}
-                        <span className="text-indigo-300">
-                            "{typed}
-                            <span className="animate-pulse">_</span>"
-                        </span>
-                    </h2>
-
-                    <p className="mt-8 max-w-2xl leading-8 text-white/60">
-                        I'm a <span className="font-semibold text-cyan-400">Frontend-focused MERN Stack Developer</span> who enjoys building{" "}
-                        <span className="font-semibold text-white">fast</span>,{" "}
-                        <span className="font-semibold text-white">scalable</span>, and{" "}
-                        <span className="font-semibold text-white">user-centric</span> web applications.
-                        With expertise in{" "}
-                        <span className="font-semibold text-cyan-400">
-                            Next.js, React, Tailwind CSS, Node.js, Express.js, and MongoDB
-                        </span>
-                        , I create modern digital experiences that combine{" "}
-                        <span className="font-semibold text-white">clean code</span>,{" "}
-                        <span className="font-semibold text-white">responsive design</span>,{" "}
-                        <span className="font-semibold text-white">accessibility</span>, and{" "}
-                        <span className="font-semibold text-white">performance</span> to deliver
-                        real value.
+                    <p className="mt-6 text-lg text-slate-400 md:text-xl">
+                        {typed}
+                        <span className="animate-pulse text-cyan-400">|</span>
                     </p>
 
-                    <div className="mt-10 flex flex-wrap justify-center gap-4 lg:justify-start">
+                    <p className="mt-8 max-w-xl leading-8 text-white/60">
+                        Frontend-focused MERN Stack Developer passionate about building
+                        responsive, accessible and high-performance web applications using
+                        <span className="text-white"> React</span>,
+                        <span className="text-white"> Next.js</span>,
+                        <span className="text-white"> Node.js</span> and
+                        <span className="text-white"> MongoDB</span>.
+                    </p>
+
+                    <div className="mt-10 flex flex-wrap gap-8">
+
+                        <div>
+                            <p className="text-lg sm:text-2xl font-bold text-white">
+                                20+
+                            </p>
+                            <p className="text-xs sm:text-sm text-white/45">
+                                Projects Built
+                            </p>
+                        </div>
+
+                        <div>
+                            <p className=" text-lg sm:text-2xl font-bold text-white">
+                                React
+                            </p>
+                            <p className="text-xs sm:text-sm text-white/45">
+                                Ecosystem
+                            </p>
+                        </div>
+
+                        <div>
+                            <p className="text-lg sm:text-2xl font-bold text-white">
+                                Next.js
+                            </p>
+                            <p className="text-xs sm:text-sm text-white/45">
+                                App Router
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div className="mt-14 flex flex-wrap items-center gap-2 sm:gap-4 lg:justify-start">
 
                         <a
                             href="#contact"
-                            className="group flex items-center gap-2 rounded-lg bg-cyan-400 px-7 py-3.5 font-semibold text-slate-950 transition-all duration-300 hover:bg-cyan-300 hover:scale-[1.02]"
+                            className="group flex flex-1 sm:max-w-[220px]  justify-center items-center gap-1 md:gap-2 rounded-lg bg-cyan-400 px-3 py-3 md:px-7 md:py-3.5 font-semibold text-slate-950 transition-all duration-300 hover:bg-cyan-300 hover:scale-[1.02] text-sm "
                         >
                             Get In Touch
                             <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-0.5" />
@@ -137,12 +152,12 @@ export default function Hero() {
 
                         <a
                             href="/sabbir_resume.pdf"
-                            download="Sabbir_Rahman_Resume.pdf"
+                            download="MD_Sabbir_Rahman_Frontent_Developer_Resume.pdf"
                             onClick={handleDownloadClick}
                             aria-live="polite"
-                            className={`flex min-w-[200px] items-center justify-center gap-2 rounded-lg border px-7 py-3.5 font-semibold backdrop-blur-xl transition-all duration-300 ${downloadState === "done"
-                                    ? "border-emerald-400/40 bg-emerald-400/10 text-emerald-300"
-                                    : "border-white/15 text-white/90 hover:border-cyan-400/50 hover:bg-white/5 hover:scale-[1.02]"
+                            className={`hidden sm:flex flex-1 sm:max-w-[220px]  items-center justify-center gap-2 rounded-lg border px-3 py-3 md:px-7 md:py-3.5 font-semibold text-sm  backdrop-blur-xl transition-all duration-300 ${downloadState === "done"
+                                ? "border-emerald-400/40 bg-emerald-400/10 text-emerald-300"
+                                : "border-white/15 text-white/90 hover:border-cyan-400/50 hover:bg-white/5 hover:scale-[1.02]"
                                 }`}
                         >
                             {downloadState === "downloading" && (
@@ -160,6 +175,36 @@ export default function Hero() {
                             {downloadState === "idle" && (
                                 <>
                                     Download Resume
+                                    <Download size={17} />
+                                </>
+                            )}
+                        </a>
+
+                        <a
+                            href="/sabbir_resume.pdf"
+                            download="MD_Sabbir_Rahman_Frontent_Developer_Resume.pdf"
+                            onClick={handleDownloadClick}
+                            aria-live="polite"
+                            className={`sm:hidden flex flex-1 items-center justify-center gap-2 rounded-lg border px-3 py-3 md:px-7 md:py-3.5 font-semibold text-sm  backdrop-blur-xl transition-all duration-300 ${downloadState === "done"
+                                ? "border-emerald-400/40 bg-emerald-400/10 text-emerald-300"
+                                : "border-white/15 text-white/90 hover:border-cyan-400/50 hover:bg-white/5 hover:scale-[1.02]"
+                                }`}
+                        >
+                            {downloadState === "downloading" && (
+                                <>
+                                    <Loader2 size={17} className="animate-spin" />
+                                    Downloading...
+                                </>
+                            )}
+                            {downloadState === "done" && (
+                                <>
+                                    <Check size={17} />
+                                    Downloaded
+                                </>
+                            )}
+                            {downloadState === "idle" && (
+                                <>
+                                    Resume
                                     <Download size={17} />
                                 </>
                             )}

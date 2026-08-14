@@ -44,7 +44,7 @@ export function AboutModal() {
                 <Modal.Container>
                     <Modal.Dialog className="sm:max-w-3xl bg-white/10 backdrop-blur-2xl border border-slate-700 ">
                         <Modal.CloseTrigger />
-                        <Modal.Body >
+                        <Modal.Body className="overflow-y-auto ">
                             <div className="space-y-8 text-white">
 
                                 {/* Terminal-style intro */}
@@ -173,8 +173,8 @@ export function AboutModal() {
                                         Email
                                     </a>
                                     <a
-                                        href="/resume.pdf"
-                                        target="_blank"
+                                        href="/sabbir_resume.pdf"
+                                        download="MD_Sabbir_Rahman_Frontend_Developer_Resume.pdf"
                                         rel="noopener noreferrer"
                                         className="ml-auto flex items-center gap-2 rounded-full bg-cyan-400 px-4 py-2 text-sm font-medium text-slate-950 transition-colors hover:bg-cyan-300"
                                     >
