@@ -51,8 +51,7 @@ export default function About() {
                         About Me
                     </h2>
                     <p className=" mt-4 max-w-xl text-white/50">
-                        Currently building SparkNest, Voyentra and QurbaniHat — three
-                        full-stack platforms, one growing skill set.
+                        Frontend-focused MERN developer building responsive, accessible, and high-performance web applications with modern web technologies.
                     </p>
                 </motion.div>
 
@@ -76,7 +75,7 @@ export default function About() {
                             />
                             <motion.div
                                 className="absolute left-0 right-0 h-12 pointer-events-none"
-                                animate={{ y: [-50 , 480] }}
+                                animate={{ y: [-50, 480] }}
                                 transition={{
                                     duration: 3,
                                     repeat: Infinity,

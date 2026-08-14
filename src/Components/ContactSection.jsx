@@ -87,9 +87,7 @@ export default function Contact() {
                         Get In Touch
                     </h2>
                     <p className="mt-5 text-base leading-8 text-white/60 md:text-lg">
-                        Open to internship and freelance opportunities. Have a project in
-                        mind or just want to talk shop — send a message and I'll get back
-                        to you within a day or two.
+                        Open to internship and freelance opportunities. Whether you have a project, collaboration, or opportunity in mind, I'd be happy to connect and will respond as soon as possible.
                     </p>
                 </motion.div>
 

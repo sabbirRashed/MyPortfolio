@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin, FaHeart } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-slate-950">
-     
+
 
       {/* Glow */}
       <div className="absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/10 blur-[140px]" />
@@ -43,10 +43,10 @@ export default function Footer() {
 
         <div className="my-12 h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
-        <p className="flex items-center gap-2 text-sm text-white/60">
-          © {new Date().getFullYear()} Sabbir Rahman • Crafted with
-          <FaHeart className="text-red-400" />
-          using Next.js & Tailwind CSS
+        <p className="flex flex-wrap items-center justify-center gap-2 text-center text-sm text-white/60">
+          <span>© {new Date().getFullYear()} Sabbir Rahman • Crafted with</span>
+          <FaHeart className="shrink-0 text-red-400" />
+          <span>using Next.js & Tailwind CSS</span>
         </p>
       </div>
     </footer>

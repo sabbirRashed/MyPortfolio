@@ -83,7 +83,7 @@ export default function Hero() {
                     <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/15 bg-cyan-400/5 px-3 py-1">
                         <span className="h-2 w-2 rounded-full bg-emerald-400" />
                         <span className="text-xs font-medium tracking-wide text-white/65">
-                            AVAILABLE FOR INTERNSHIP
+                            AVAILABLE FOR OPPORTUNITIES
                         </span>
                     </div>
 
