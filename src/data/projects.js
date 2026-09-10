@@ -1,5 +1,5 @@
 export const projects = [
-     {
+    {
         id: 1,
         slug: "sparknest",
         featured: true,
@@ -114,6 +114,54 @@ export const projects = [
             "Toast notifications",
             "Loading states",
             "Reusable component architecture"
+        ]
+    },
+
+    {
+        id: 4,
+        slug: "legalease",
+        featured: true,
+
+        title: "LegalEase",
+
+        tagline: "Full-Stack Legal Service Marketplace",
+
+        description:
+            "A full-stack legal service marketplace that connects clients with qualified lawyers, enabling users to discover lawyers, request legal services, make secure payments, manage hiring history, and leave reviews.",
+
+        image: "/images/projects/legalease.webp",
+
+        liveUrl: "https://legalease-chi-one.vercel.app",
+
+        githubUrl: "https://github.com/sabbirRashed/LegalEase",
+
+        category: "Full Stack",
+
+        techStack: [
+            "Next.js",
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Better Auth",
+            "Stripe",
+            "Tailwind CSS",
+            "HeroUI",
+        ],
+
+        highlights: [
+            "Email/password & Google authentication",
+            "Role-based access control",
+            "Browse, search, and filter lawyers",
+            "Lawyer profile and service management",
+            "Hiring request workflow",
+            "Stripe payment integration",
+            "Hiring history and transaction tracking",
+            "Client reviews and comments",
+            "Lawyer availability management",
+            "Admin dashboard and analytics",
+            "User and role management",
+            "Protected dashboards and routes",
         ]
     }
 ];
