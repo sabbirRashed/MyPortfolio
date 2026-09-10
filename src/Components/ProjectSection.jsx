@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
 import ProjectCard from "./cards/ProjectCard";
 import { useState } from "react";
+import { Button } from "@heroui/react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 
 // Parent orchestrates the stagger — children don't need their own delay math.
@@ -69,6 +71,8 @@ export default function Projects() {
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true, amount: 0.15 }}
+                        animate={{ x: `-${currentIndex * (100 / 3)}%` }}
+                        transition={{ duration: 0.6, ease: 'easeInOut' }}
                         // className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
                         className="flex items-stretch"
                     >
@@ -84,19 +88,19 @@ export default function Projects() {
                     </motion.div>
                 </div>
                 <div className="mt-6 flex justify-center gap-3">
-                    <button
-                        onClick={prevSlide}
-                        disabled={currentIndex === 0}
-                    >
-                        Previous
-                    </button>
+                    <Button
+                    isIconOnly
+                    variant="white"
+                    className="border border-slate-600 text-slate-400 hover:bg-slate-800">
+                        <FaArrowLeft />
+                    </Button>
 
-                    <button
-                        onClick={nextSlide}
-                        disabled={currentIndex === projects.length - 3}
-                    >
-                        Next
-                    </button>
+                    <Button
+                    isIconOnly
+                    variant="white"
+                    className="border border-slate-600 text-slate-400 hover:bg-slate-800">
+                        <FaArrowRight />
+                    </Button>
                 </div>
 
             </div>
