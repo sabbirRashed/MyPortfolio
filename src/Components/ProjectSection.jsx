@@ -89,16 +89,20 @@ export default function Projects() {
                 </div>
                 <div className="mt-6 flex justify-center gap-3">
                     <Button
-                    isIconOnly
-                    variant="white"
-                    className="border border-slate-600 text-slate-400 hover:bg-slate-800">
+                        isIconOnly
+                        variant="white"
+                        onClick={prevSlide}
+                        isDisabled={currentIndex === 0}
+                        className="border border-slate-600 text-slate-400 hover:bg-slate-800">
                         <FaArrowLeft />
                     </Button>
 
                     <Button
-                    isIconOnly
-                    variant="white"
-                    className="border border-slate-600 text-slate-400 hover:bg-slate-800">
+                        isIconOnly
+                        variant="white"
+                        onClick={nextSlide}
+                        isDisabled={currentIndex === (projects.length - 3)}
+                        className="border border-slate-600 text-slate-400 hover:bg-slate-800">
                         <FaArrowRight />
                     </Button>
                 </div>
