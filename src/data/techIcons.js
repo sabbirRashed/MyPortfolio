@@ -13,6 +13,7 @@ import {
     SiGithub,
     SiVercel,
     SiNetlify,
+    SiStripe,
 } from "react-icons/si";
 import {
     Sparkles,
@@ -45,6 +46,7 @@ const TECH_ICON_MAP = {
     heroui: { icon: Sparkles, color: "#22D3EE" },
     daisyui: { icon: Palette, color: "#8B5CF6" },
     betterauth: { icon: ShieldCheck, color: "#34D399" },
+    stripe: { icon: SiStripe, color: "#635BFF" },
 };
 
 const FALLBACK = { icon: Code2, color: "#94A3B8" };

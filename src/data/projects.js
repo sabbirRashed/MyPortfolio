@@ -144,10 +144,10 @@ export const projects = [
             "MongoDB",
             "Better Auth",
             "JWT",
-            "Stripe",
             "Tailwind CSS",
             "HeroUI",
             "Framer Motion",
+            "Stripe",
         ],
 
         highlights: [
