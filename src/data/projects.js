@@ -139,14 +139,15 @@ export const projects = [
 
         techStack: [
             "Next.js",
-            "React",
             "Node.js",
             "Express.js",
             "MongoDB",
             "Better Auth",
+            "JWT",
             "Stripe",
             "Tailwind CSS",
             "HeroUI",
+            "Framer Motion",
         ],
 
         highlights: [
