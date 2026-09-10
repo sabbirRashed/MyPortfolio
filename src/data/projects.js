@@ -10,7 +10,7 @@ export const projects = [
         tagline: "Full-Stack Legal Service Marketplace",
 
         description:
-            "A full-stack legal service marketplace that connects clients with qualified lawyers, enabling users to discover lawyers, request legal services, make secure payments, manage hiring history, and leave reviews.",
+            "A full-stack legal marketplace that connects clients with qualified lawyers, enabling users to discover lawyers, request legal services, make payments, manage hiring history, and leave reviews.",
 
         image: "/images/projects/legalease.webp",
 

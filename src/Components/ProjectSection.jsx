@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
 import ProjectCard from "./cards/ProjectCard";
+import { useState } from "react";
 
 
 // Parent orchestrates the stagger — children don't need their own delay math.
@@ -25,6 +26,16 @@ const cardVariants = {
 };
 
 export default function Projects() {
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    const nextSlide = () => {
+        setCurrentIndex((prev) => Math.min(prev + 1, projects.length - 3));
+    }
+
+    const prevSlide = () => {
+        setCurrentIndex((prev) => Math.max(prev - 1, 0))
+    }
+
     return (
         <section id="projects" className="relative overflow-hidden scroll-mt-24 bg-slate-950 text-white">
             {/* Ambient glow, consistent with the rest of the page */}
@@ -52,23 +63,41 @@ export default function Projects() {
                 </motion.div>
 
                 {/* Grid — stagger orchestrated by the parent, so cards reveal in sequence */}
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: true, amount: 0.15 }}
-                    className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-                >
-                    {projects.map((project) => (
-                        <motion.div
-                            key={project.id}
-                            variants={cardVariants}
-                            className="h-full"
-                        >
-                            <ProjectCard project={project} />
-                        </motion.div>
-                    ))}
-                </motion.div>
+                <div className="mt-14 overflow-hidden">
+                    <motion.div
+                        variants={containerVariants}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true, amount: 0.15 }}
+                        // className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+                        className="flex items-stretch"
+                    >
+                        {projects.map((project) => (
+                            <motion.div
+                                key={project.id}
+                                variants={cardVariants}
+                                className="flex w-1/3 px-3 shrink-0"
+                            >
+                                <ProjectCard project={project} />
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                </div>
+                <div className="mt-6 flex justify-center gap-3">
+                    <button
+                        onClick={prevSlide}
+                        disabled={currentIndex === 0}
+                    >
+                        Previous
+                    </button>
+
+                    <button
+                        onClick={nextSlide}
+                        disabled={currentIndex === projects.length - 3}
+                    >
+                        Next
+                    </button>
+                </div>
 
             </div>
         </section>
