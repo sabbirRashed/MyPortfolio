@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
 import ProjectCard from "./cards/ProjectCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@heroui/react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -31,12 +31,20 @@ export default function Projects() {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const nextSlide = () => {
-        setCurrentIndex((prev) => Math.min(prev + 1, projects.length - 3));
+        setCurrentIndex((prev) => prev >= projects.length - 3 ? 0 : prev + 1);
     }
 
     const prevSlide = () => {
         setCurrentIndex((prev) => Math.max(prev - 1, 0))
     }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide((prev) => prev >= projects.length - 3 ? 0 : prev + 1)
+        }, 3000)
+
+        return () => clearInterval(interval)
+    }, [projects.length])
 
     return (
         <section id="projects" className="relative overflow-hidden scroll-mt-24 bg-slate-950 text-white">
@@ -101,7 +109,6 @@ export default function Projects() {
                         isIconOnly
                         variant="white"
                         onClick={nextSlide}
-                        isDisabled={currentIndex === (projects.length - 3)}
                         className="border border-slate-600 text-slate-400 hover:bg-slate-800">
                         <FaArrowRight />
                     </Button>
