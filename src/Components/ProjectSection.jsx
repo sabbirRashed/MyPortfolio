@@ -31,20 +31,12 @@ export default function Projects() {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const nextSlide = () => {
-        setCurrentIndex((prev) => prev >= projects.length - 3 ? 0 : prev + 1);
-    }
+        setCurrentIndex((prev) => prev + 1);
+    };
 
     const prevSlide = () => {
-        setCurrentIndex((prev) => Math.max(prev - 1, 0))
-    }
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            nextSlide((prev) => prev >= projects.length - 3 ? 0 : prev + 1)
-        }, 3000)
-
-        return () => clearInterval(interval)
-    }, [projects.length])
+        setCurrentIndex((prev) => prev - 1);
+    };
 
     return (
         <section id="projects" className="relative overflow-hidden scroll-mt-24 bg-slate-950 text-white">
@@ -99,8 +91,8 @@ export default function Projects() {
                     <Button
                         isIconOnly
                         variant="white"
-                        onClick={prevSlide}
                         isDisabled={currentIndex === 0}
+                        onClick={prevSlide}
                         className="border border-slate-600 text-slate-400 hover:bg-slate-800">
                         <FaArrowLeft />
                     </Button>
@@ -108,6 +100,7 @@ export default function Projects() {
                     <Button
                         isIconOnly
                         variant="white"
+                        isDisabled={currentIndex === (projects.length - 3)}
                         onClick={nextSlide}
                         className="border border-slate-600 text-slate-400 hover:bg-slate-800">
                         <FaArrowRight />
