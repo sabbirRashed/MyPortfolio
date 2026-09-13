@@ -191,8 +191,7 @@ export default function About() {
                     ))}
                 </motion.div>
             </div>
-
-            {/* Full profile modal — glassmorphic */}
+            
         </section>
     );
 }

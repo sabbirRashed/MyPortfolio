@@ -33,7 +33,6 @@ export function AboutModal() {
     return (
         <Modal>
             <Button
-                // onClick={onOpen}
                 className="flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 font-mono text-xs tracking-wide text-white/70 transition-colors duration-300 hover:border-cyan-400/50 hover:text-cyan-300"
             >
                 <FileText size={14} />
@@ -173,7 +172,7 @@ export function AboutModal() {
                                         Email
                                     </a>
                                     <a
-                                        href="/sabbir_resume.pdf"
+                                        href="/sabbir_rahman_resume.pdf"
                                         download="MD_Sabbir_Rahman_Frontend_Developer_Resume.pdf"
                                         rel="noopener noreferrer"
                                         className="ml-auto flex items-center gap-2 rounded-full bg-cyan-400 px-4 py-2 text-sm font-medium text-slate-950 transition-colors hover:bg-cyan-300"

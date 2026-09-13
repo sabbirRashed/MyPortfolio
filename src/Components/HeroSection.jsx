@@ -47,15 +47,12 @@ function useTypewriter(words, { typeSpeed = 70, deleteSpeed = 35, pause = 1800 }
 }
 
 export default function Hero() {
-    // Browsers don't expose a real "download complete" event for a plain
-    // <a download> click — the file just starts saving natively with no JS
-    // hook. So this timing is a deliberate, honest-feeling simulation: it
-    // reassures the user something happened, it doesn't track the real file.
-    const [downloadState, setDownloadState] = useState("idle"); // idle | downloading | done
+
+    const [downloadState, setDownloadState] = useState("idle"); 
     const typed = useTypewriter(ROLES);
 
     const handleDownloadClick = () => {
-        if (downloadState !== "idle") return; // ignore repeat clicks mid-animation
+        if (downloadState !== "idle") return; 
 
         setDownloadState("downloading");
         setTimeout(() => setDownloadState("done"), 900);
@@ -151,7 +148,7 @@ export default function Hero() {
                         </a>
 
                         <a
-                            href="/sabbir_resume.pdf"
+                            href="/sabbir_rahman_resume.pdf"
                             download="MD_Sabbir_Rahman_Frontent_Developer_Resume.pdf"
                             onClick={handleDownloadClick}
                             aria-live="polite"
