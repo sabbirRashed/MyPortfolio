@@ -8,7 +8,7 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import Link from "next/link";
 
 const EDUCATION = [
-    { period: "2021 — Present", title: "BSc in Mathematics", place: "National University, Bangladesh" },
+    { period: "2023 — 2027", title: "BSc in Mathematics", place: "National University, Bangladesh" },
     { period: "2021", title: "Higher Secondary Certificate (HSC)", place: "GPA 4.75" },
     { period: "2019", title: "Secondary School Certificate (SSC)", place: "GPA 4.72" },
 ];
@@ -92,8 +92,8 @@ export function AboutModal() {
                                             <Award size={13} />
                                             CERTIFICATION
                                         </p>
-                                        <p className="text-sm text-white/80">Web Development</p>
-                                        <p className="text-sm text-white/45">Programming Hero — In Progress</p>
+                                        <p className="text-sm text-white/80"> AI-Powered Future-Ready Web Development</p>
+                                        <p className="text-sm text-white/45">Programming Hero — 2026</p>
                                     </div>
 
                                     <div className="rounded-xl border border-white/10 bg-white/5 p-4">
